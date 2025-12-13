@@ -14,6 +14,13 @@
     --warning-color: #FFD700;
     --font1: 'Parkinsans', sans-serif;
     --fontmain: 'Boldonse', sans-serif;
+
+      --clinara-light-green: #f3f9f2;
+    --clinara-mid-green: #8fd279;
+    --clinara-dark-green: #48a614;
+    --clinara-yellow: #ffc90a;
+    --clinara-text-gray: #555;
+    --clinara-heading-color: #333;
 }
 
 * {
@@ -165,7 +172,7 @@ nav .main-section{
 
 
 h1{
-    font-size: 40px;
+  font-size: clamp(28px, 3vw, 40px);
 }
 
 @keyframes fadeInUp {
@@ -922,14 +929,6 @@ line-height: 30px;
 
 
       /* Define color variables for easy modification */
-:root {
-    --clinara-light-green: #f3f9f2;
-    --clinara-mid-green: #8fd279;
-    --clinara-dark-green: #48a614;
-    --clinara-yellow: #ffc90a;
-    --clinara-text-gray: #555;
-    --clinara-heading-color: #333;
-}
 
 .clinara-footer {
       background-color: transparent;
@@ -1127,7 +1126,7 @@ line-height: 30px;
 /* Icon */
 .icon-box i {
   font-size: 22px;
-  color: #000;
+  color: var(--secondary-color);
 }
 
 /* Desktop remains same */
@@ -1160,6 +1159,10 @@ line-height: 30px;
 @media (max-width: 767px) {
   .process-flow {
     padding-top: 20px;
+  }
+
+  .hero-section .reviews{
+margin: 0px !important;
   }
 
   .step {
