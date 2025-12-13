@@ -15,12 +15,12 @@
     --font1: 'Parkinsans', sans-serif;
     --fontmain: 'Boldonse', sans-serif;
 
-      --clinara-light-green: #f3f9f2;
-    --clinara-mid-green: #8fd279;
-    --clinara-dark-green: #48a614;
-    --clinara-yellow: #ffc90a;
-    --clinara-text-gray: #555;
-    --clinara-heading-color: #333;
+      --boostcommercial-light-green: #f3f9f2;
+    --boostcommercial-mid-green: #8fd279;
+    --boostcommercial-dark-green: #48a614;
+    --boostcommercial-yellow: #ffc90a;
+    --boostcommercial-text-gray: #555;
+    --boostcommercial-heading-color: #333;
 }
 
 * {
@@ -33,9 +33,11 @@ body {
     font-family: var(--font1);
     font-weight: 400;
     overflow-x: hidden;
+    padding: 0;
+    width: 100%;
+    margin: 0;
     color: var(--text-color);
     background-color: #FFFFFF;
-    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -931,17 +933,17 @@ line-height: 30px;
 
       /* Define color variables for easy modification */
 
-.clinara-footer {
+.boostcommercial-footer {
       background-color: transparent;
     background-image: linear-gradient(180deg, #E8F5D3 61.14%, #FFFFFF 116.68%);
-    color: var(--clinara-text-gray);
+    color: var(--boostcommercial-text-gray);
     position: relative;
     overflow: hidden; /* To contain the background stars/shapes */
     font-family: Arial, sans-serif; /* Use a suitable font */
 }
 
 /* Background star shapes (using pseudo-elements for design) */
-/* .clinara-footer::before {
+/* .boostcommercial-footer::before {
     content: '';
     position: absolute;
     top: 0;
@@ -958,21 +960,21 @@ line-height: 30px;
 .logo-area .logo-text {
     font-weight: 700;
     font-size: 1.5rem;
-    color: var(--clinara-dark-green);
+    color: var(--boostcommercial-dark-green);
 }
 
 .logo-area .logo-subtext {
     font-size: 0.8rem;
     font-weight: 400;
-    color: var(--clinara-text-gray);
+    color: var(--boostcommercial-text-gray);
     margin-left: 0.25rem;
-    border-left: 1px solid var(--clinara-mid-green);
+    border-left: 1px solid var(--boostcommercial-mid-green);
     padding-left: 0.25rem;
     line-height: 1;
 }
 
 .tagline {
-    color: var(--clinara-mid-green);
+    color: var(--boostcommercial-mid-green);
     font-size: 2rem;
     font-weight: 600;
     margin-top: -0.5rem;
@@ -982,7 +984,7 @@ line-height: 30px;
 
 /* Headings Styling */
 .footer-heading {
-    color: var(--clinara-heading-color);
+    color: var(--boostcommercial-heading-color);
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -997,7 +999,7 @@ line-height: 30px;
 }
 
 .contact-icon {
-    color: var(--clinara-mid-green);
+    color: var(--boostcommercial-mid-green);
     margin-right: 0.75rem;
     font-size: 1rem;
     margin-top: 0.2rem;
@@ -1005,17 +1007,17 @@ line-height: 30px;
 
 .contact-info {
     font-size: 0.95rem;
-    color: var(--clinara-text-gray);
+    color: var(--boostcommercial-text-gray);
 }
 .contact-info strong {
-    color: var(--clinara-heading-color);
+    color: var(--boostcommercial-heading-color);
     font-weight: 600;
 }
 
 /* Call for Booking Button */
 .call-for-booking {
-    background-color: var(--clinara-yellow);
-    color: var(--clinara-heading-color);
+    background-color: var(--boostcommercial-yellow);
+    color: var(--boostcommercial-heading-color);
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 50px;
@@ -1027,7 +1029,7 @@ line-height: 30px;
 
 .call-for-booking:hover {
     background-color: #ffd64d;
-    color: var(--clinara-heading-color);
+    color: var(--boostcommercial-heading-color);
 }
 
 .call-for-booking::before {
@@ -1053,7 +1055,7 @@ line-height: 30px;
 
 /* Service Links Styling */
 .service-links li a {
-    color: var(--clinara-text-gray);
+    color: var(--boostcommercial-text-gray);
     text-decoration: none;
     font-size: 0.95rem;
     padding: 0.2rem 0;
@@ -1062,21 +1064,21 @@ line-height: 30px;
 }
 
 .service-links li a:hover {
-    color: var(--clinara-mid-green);
+    color: var(--boostcommercial-mid-green);
 }
 
 /* Newsletter Section */
 .newsletter-note {
     background-color: white;
     border-radius: 8px;
-    border-left: 5px solid var(--clinara-mid-green);
+    border-left: 5px solid var(--boostcommercial-mid-green);
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     display: flex;
     align-items: flex-start;
 }
 
 .note-icon {
-    color: var(--clinara-mid-green);
+    color: var(--boostcommercial-mid-green);
     font-size: 1.5rem;
     margin-right: 10px;
     flex-shrink: 0;
@@ -1090,8 +1092,8 @@ line-height: 30px;
 }
 
 .newsletter-form .subscribe-btn {
-    background-color: var(--clinara-mid-green);
-    border: 1px solid var(--clinara-mid-green);
+    background-color: var(--boostcommercial-mid-green);
+    border: 1px solid var(--boostcommercial-mid-green);
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 0 50px 50px 0 !important;
@@ -1099,8 +1101,8 @@ line-height: 30px;
 }
 
 .newsletter-form .subscribe-btn:hover {
-    background-color: var(--clinara-dark-green);
-    border-color: var(--clinara-dark-green);
+    background-color: var(--boostcommercial-dark-green);
+    border-color: var(--boostcommercial-dark-green);
 }
 
 /* Social Icons */
@@ -1111,7 +1113,7 @@ line-height: 30px;
     width: 35px;
     height: 35px;
     background-color: white;
-    color: var(--clinara-text-gray);
+    color: var(--boostcommercial-text-gray);
     border-radius: 50%;
     margin-right: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -1119,7 +1121,7 @@ line-height: 30px;
 }
 
 .social-circle:hover {
-    background-color: var(--clinara-mid-green);
+    background-color: var(--boostcommercial-mid-green);
     color: white;
 }
 
@@ -1162,6 +1164,11 @@ line-height: 30px;
     padding-top: 20px;
   }
 
+.hero-section{
+    height: 100%;
+    padding:auto 40px;
+}
+
   .hero-section .reviews{
 margin: 0px !important;
   }
@@ -1195,4 +1202,21 @@ margin: 0px !important;
     padding: 8px 12px  !important;
     font-size: 13px !important;
 }
+}
+
+
+.footer-text{
+    text-align: center;
+    background: var(--boostcommercial-mid-green);
+    padding: 20px 0;
+}
+
+.footer-text p{
+    margin-bottom: 0px;
+    color: white;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: white;
 }
