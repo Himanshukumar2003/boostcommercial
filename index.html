@@ -87,35 +87,42 @@
 
                     <form class="row g-3">
                         <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Enter Your Full Name">
                         </div>
+
                         <div class="col-md-4">
                             <select class="form-select">
-                                <option>1 Bedroom</option>
-                                <option>2 Bedrooms</option>
-                                <option>3 Bedrooms</option>
-                                <option>4+ Bedrooms</option>
+                                <option selected disabled>Select a Service</option>
+                                <option>Office Cleaning</option>
+                                <option>Retail Cleaning</option>
+                                <option>Warehouse Cleaning</option>
+                                <option>Medical Cleaning</option>
+                                <option>Hospitality Cleaning</option>
+                                <option>Gym Cleaning</option>
+                                <option>Tile & Grout Cleaning</option>
+                                <option>Carpet Cleaning</option>
+                                <option>End of Lease Cleaning</option>
+                                <option>Bond Cleaning</option>
+                                <option>Builders Cleaning</option>
+                                <option>Commercial Cleaning</option>
+                                <option>Restaurant Cleaning</option>
                             </select>
+
                         </div>
                         <div class="col-md-4">
-                            <select class="form-select">
-                                <option>1 Bathroom</option>
-                                <option>2 Bathrooms</option>
-                                <option>3 Bathrooms</option>
-                                <option>4+ Bathrooms</option>
-                            </select>
+                            <input type="email" class="form-control" placeholder="Enter Your  Email Address">
                         </div>
                         <div class="col-md-4">
-                            <input type="email" class="form-control" placeholder="Email Address">
+                            <input type="tel" class="form-control" placeholder="Enter Your  Phone">
                         </div>
-                        <div class="col-md-4">
-                            <input type="tel" class="form-control" placeholder="Phone">
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="Zip Code">
+
+
+                        <div class="col-md-8">
+                            <textarea class="form-control" rows="1"
+                                placeholder="Tell us about your cleaning requirements... *"></textarea>
                         </div>
                         <div class="col-12 text-center">
-                            <button type="submit" class="btn btn-warning btn-lg px-5">Get Price</button>
+                            <button type="submit" class="btn btn-warning btn-lg px-5">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -394,71 +401,70 @@
                     <div class="col-lg-7">
                         <div class="booking-form-wrapper bg-white p-4 p-lg-5">
                             <div class="text-uppercase text-muted small mb-3">BOOKING</div>
-                            <h2 class="h2 fw-bold mb-4">Get Your Estimate &<br>Book Now</h2>
+                            <h2 class="heading">Get Your <span> Estimate</span> &<br> <span>Book Now</span></h2>
 
 
 
                             <form class="booking-form">
                                 <div class="row g-3">
-                                    <div class="col-md-4">
+
+                                    <!-- Full Name -->
+                                    <div class="col-md-6">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter your full name"
+                                            required>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-control" placeholder="Enter your email"
+                                            required>
+                                    </div>
+
+                                    <!-- Phone -->
+                                    <div class="col-md-6">
+                                        <label class="form-label">Phone</label>
+                                        <input type="tel" class="form-control" placeholder="Enter your phone number"
+                                            required>
+                                    </div>
+
+                                    <!-- Service Selection -->
+                                    <div class="col-md-6">
                                         <label class="form-label">Service</label>
-                                        <select class="form-select">
-                                            <option>Select service that fits you best</option>
-                                            <option>Residential Cleaning</option>
-                                            <option>Commercial Cleaning</option>
-                                            <option>Deep Cleaning</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="form-label">Bedrooms</label>
-                                        <select class="form-select">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4+</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="form-label">Bathrooms</label>
-                                        <select class="form-select">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4+</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Extras</label>
-                                        <select class="form-select">
-                                            <option>Select</option>
-                                            <option>Windows</option>
+                                        <select class="form-select" required>
+                                            <option selected disabled>Select a Service</option>
+                                            <option>Office Cleaning</option>
+                                            <option>Retail Cleaning</option>
+                                            <option>Warehouse Cleaning</option>
+                                            <option>Medical Cleaning</option>
+                                            <option>Hospitality Cleaning</option>
+                                            <option>Gym Cleaning</option>
+                                            <option>Tile & Grout Cleaning</option>
                                             <option>Carpet Cleaning</option>
-                                            <option>Appliances</option>
+                                            <option>End of Lease Cleaning</option>
+                                            <option>Bond Cleaning</option>
+                                            <option>Builders Cleaning</option>
+                                            <option>Commercial Cleaning</option>
+                                            <option>Restaurant Cleaning</option>
                                         </select>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Frequency</label>
-                                        <select class="form-select">
-                                            <option>Select</option>
-                                            <option>One-time</option>
-                                            <option>Weekly</option>
-                                            <option>Bi-weekly</option>
-                                            <option>Monthly</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Date</label>
-                                        <input type="text" class="form-control" placeholder="Date">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Time</label>
-                                        <input type="time" class="form-control" value="08:00">
-                                    </div>
+
+                                    <!-- Message -->
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-warning btn-lg w-100">Continue</button>
+                                        <label class="form-label">Message</label>
+                                        <textarea class="form-control" rows="4"
+                                            placeholder="Enter your message"></textarea>
                                     </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-warning btn-lg w-100">Submit </button>
+                                    </div>
+
                                 </div>
                             </form>
+
 
                             <div class="contact-info mt-4 pt-4 border-top">
                                 <p class="text-muted mb-0">
