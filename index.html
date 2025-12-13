@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clanyeco - House Cleaning & Maid Service</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="sticky-top  navbar navbar-expand-lg navbar-light p-0    w-100">
+        <div class="container">
+            <div class="main-section bg-white w-10 d-flex justify-content-between  ">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#process">Our Process</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#booking">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="tel:0483 959 909" class="text-decoration-none text-dark d-flex align-items-center">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="me-2">
+                                <path d="M20 10.999H22C22 5.869 18.127 2 12.99 2V4C17.052 4 20 6.943 20 10.999Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M13 8.00024C15.103 8.00024 16 8.89724 16 11.0002H18C18 7.77524 16.225 6.00024 13 6.00024V8.00024ZM16.422 13.4432C16.2298 13.2686 15.9773 13.1754 15.7178 13.1835C15.4583 13.1915 15.212 13.3001 15.031 13.4862L12.638 15.9472C12.062 15.8372 10.904 15.4762 9.71204 14.2872C8.52004 13.0942 8.15904 11.9332 8.05204 11.3612L10.511 8.96724C10.6975 8.78638 10.8062 8.54006 10.8142 8.2805C10.8222 8.02093 10.7289 7.76844 10.554 7.57624L6.85904 3.51324C6.68408 3.32075 6.44092 3.2035 6.18119 3.18725C5.92146 3.17101 5.66564 3.25696 5.46804 3.42624L3.29804 5.28724C3.12515 5.46075 3.02196 5.69169 3.00804 5.93624C2.99304 6.18624 2.70704 12.1082 7.29904 16.7022C11.305 20.7072 16.323 21.0002 17.705 21.0002C17.907 21.0002 18.031 20.9942 18.064 20.9922C18.3085 20.9786 18.5394 20.8747 18.712 20.7012L20.572 18.5302C20.7415 18.3328 20.8276 18.0771 20.8114 17.8174C20.7952 17.5577 20.6779 17.3145 20.485 17.1392L16.422 13.4432Z"
+                                    fill="currentColor" />
+                            </svg>
+                            <span>0483 959 909 </span>
+                        </a>
+                        <a href="#booking" class="btn btn-warning btn-book">Book a Cleaning</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative   overflow-visible">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8">
+                <div class="hero-card ">
+                    <div class="text-center   reviews">
+                        <div class="d-flex align-items-center justify-content-center gap-3 mb-3 flex-wrap">
+                            <span class="pt-4  text-dark">Vetted Cleaners</span>
+                            <div class="badge-award">
+                                <img src="img/trust-2.webp" alt="Angie's List">
+                            </div>
+                            <span class=" pt-4 text-dark">5 ★ Service</span>
+                        </div>
+                        <h1 class=" fw-bold mb-3">
+                            Melbourne's #1 Commercial <br>Cleaning Specialist
+
+                        </h1>
+                        <p class="lead text-muted">Experts in Office Cleaning, Retail Cleaning, Restaurant Cleaning &
+                            Builders Cleaning and more. Experience the Boost Cleaning difference with our reliable and
+                            eco-friendly solutions.
+
+                        </p>
+                    </div>
+
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select">
+                                <option>1 Bedroom</option>
+                                <option>2 Bedrooms</option>
+                                <option>3 Bedrooms</option>
+                                <option>4+ Bedrooms</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select">
+                                <option>1 Bathroom</option>
+                                <option>2 Bathrooms</option>
+                                <option>3 Bathrooms</option>
+                                <option>4+ Bathrooms</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="tel" class="form-control" placeholder="Phone">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Zip Code">
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-warning btn-lg px-5">Get Price</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section  bg-light position-relative">
+        <div class="  container-fluid">
+            <div class="row  mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="w-100 service-img h-100">
+                        <img src="img/h1-agency.png" class="w-100 " alt="service">
+                    </div>
+                </div>
+                <div class="col-lg-6 pb-5">
+                    <div class="mb-3">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="me-2">
+                            <path d="M12 2L4 7V12C4 16.5 7.5 20.5 12 22C16.5 20.5 20 16.5 20 12V7L12 2Z"
+                                fill="#00A650" />
+                        </svg>
+                        <span class="text-uppercase text-muted small">Services
+                        </span>
+                    </div>
+                    <h2 class="heading  mb-4">
+                        Our
+                        <span class="text-primary">Cleaning</span><br>
+                        Services
+                    </h2>
+                    <p class="text-muted lead">
+                        Professional cleaning services across Melbourne including Brunswick, Malvern, Preston, Prahran,
+                        Southbank, Richmond, East Melbourne, South Yarra, and Mornington.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+
+                <!-- Office Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Office<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Professional office cleaning for productive workspaces. Daily, weekly, or monthly schedules
+                            available.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- Retail Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Retail<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Keep your retail spaces pristine and welcoming for customers with our specialized retail
+                            cleaning.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- Warehouse Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Warehouse<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Heavy-duty industrial cleaning for warehouses, factories, and manufacturing facilities.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- Medical Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Medical<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Specialized healthcare cleaning with strict hygiene protocols for medical facilities.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- Hospitality Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Hospitality<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Food-safe cleaning for hotels, restaurants, cafes, and hospitality venues with health
+                            compliance.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- Gym Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Gym<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Specialized fitness facility cleaning including equipment sanitization and locker rooms.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- Tile & Grout Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Tile & Grout<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Restore your tiles and grout to their original brilliance with our deep cleaning service.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- Carpet Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Carpet<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Professional steam cleaning and stain removal to revitalize your carpets.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- End of Lease Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">End of Lease<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Get your bond back with our comprehensive end of lease cleaning service.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- Bond Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Bond<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            100% bond back guarantee with our thorough and reliable bond cleaning service.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- Builders Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Builders<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Post-construction cleanup and site maintenance for builders and developers.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- Commercial Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Commercial<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Comprehensive commercial cleaning solutions for businesses of all sizes.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+                <!-- Restaurant Cleaning -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <h3 class="h5 fw-bold">Restaurant<br>Cleaning</h3>
+                        <div class="line"></div>
+                        <p class="text-muted small mb-4">
+                            Professional kitchen and dining area cleaning that meets health department standards.
+                        </p>
+                        <div class="btn-2"><a href="#booking" class="fw-bold text-decoration-none">→</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Scrolling Text Banner -->
+        <div class="scrolling-banner overflow-hidden">
+            <div class="scrolling-text">
+                <span>★ OFFICE</span>
+                <span>★ RETAIL</span>
+                <span>★ WAREHOUSE</span>
+                <span>★ MEDICAL</span>
+                <span>★ HOSPITALITY</span>
+                <span>★ GYM</span>
+                <span>★ TILE & GROUT</span>
+                <span>★ CARPET</span>
+                <span>★ END OF LEASE</span>
+                <span>★ BOND</span>
+                <span>★ BUILDERS</span>
+                <span>★ COMMERCIAL</span>
+                <span>★ RESTAURANT</span>
+
+                <span>★ OFFICE</span>
+                <span>★ RETAIL</span>
+                <span>★ WAREHOUSE</span>
+                <span>★ MEDICAL</span>
+                <span>★ HOSPITALITY</span>
+                <span>★ GYM</span>
+                <span>★ TILE & GROUT</span>
+                <span>★ CARPET</span>
+                <span>★ END OF LEASE</span>
+                <span>★ BOND</span>
+                <span>★ BUILDERS</span>
+                <span>★ COMMERCIAL</span>
+                <span>★ RESTAURANT</span>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section py-5">
+        <div class="container">
+            <div class="booking-wrapper rounded-5 overflow-hidden shadow-lg">
+                <div class="row g-0  ">
+                    <div class="col-lg-5 position-relative">
+                        <div class="booking-image-wrapper   d-flex align-items-end h-100">
+
+
+
+                            <div class="stats-wrapper">
+                                <div class="stat-item">
+                                    <div class="stats">100%</div>
+                                    <p>Happy customers</p>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stats">10+</div>
+                                    <p>Years in industry</p>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stats">4.9</div>
+                                    <p>Yelp & Google reviews</p>
+                                </div>
+                            </div>
+
+                            <div class="rounded-cards bottom-left"></div>
+                            <div class="rounded-cards bottom-right"></div>
+                            <div class="rounded-cards top-left"></div>
+                            <div class="rounded-cards top-right"></div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="booking-form-wrapper bg-white p-4 p-lg-5">
+                            <div class="text-uppercase text-muted small mb-3">BOOKING</div>
+                            <h2 class="h2 fw-bold mb-4">Get Your Estimate &<br>Book Now</h2>
+
+
+
+                            <form class="booking-form">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <label class="form-label">Service</label>
+                                        <select class="form-select">
+                                            <option>Select service that fits you best</option>
+                                            <option>Residential Cleaning</option>
+                                            <option>Commercial Cleaning</option>
+                                            <option>Deep Cleaning</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Bedrooms</label>
+                                        <select class="form-select">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4+</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Bathrooms</label>
+                                        <select class="form-select">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4+</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Extras</label>
+                                        <select class="form-select">
+                                            <option>Select</option>
+                                            <option>Windows</option>
+                                            <option>Carpet Cleaning</option>
+                                            <option>Appliances</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Frequency</label>
+                                        <select class="form-select">
+                                            <option>Select</option>
+                                            <option>One-time</option>
+                                            <option>Weekly</option>
+                                            <option>Bi-weekly</option>
+                                            <option>Monthly</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Date</label>
+                                        <input type="text" class="form-control" placeholder="Date">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Time</label>
+                                        <input type="time" class="form-control" value="08:00">
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-warning btn-lg w-100">Continue</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="contact-info mt-4 pt-4 border-top">
+                                <p class="text-muted mb-0">
+                                    If you have any questions, contact our office at:
+                                    <a href="tel:+11805678990" class="text-decoration-none text-dark fw-bold ms-2">
+                                        <svg width="16" height="16" class="me-1" viewBox="0 0 24 24"
+                                            fill="currentColor">
+                                            <path
+                                                d="M20 10.999H22C22 5.869 18.127 2 12.99 2V4C17.052 4 20 6.943 20 10.999Z" />
+                                            <path
+                                                d="M13 8.00024C15.103 8.00024 16 8.89724 16 11.0002H18C18 7.77524 16.225 6.00024 13 6.00024V8.00024ZM16.422 13.4432C16.2298 13.2686 15.9773 13.1754 15.7178 13.1835C15.4583 13.1915 15.212 13.3001 15.031 13.4862L12.638 15.9472C12.062 15.8372 10.904 15.4762 9.71204 14.2872C8.52004 13.0942 8.15904 11.9332 8.05204 11.3612L10.511 8.96724C10.6975 8.78638 10.8062 8.54006 10.8142 8.2805C10.8222 8.02093 10.7289 7.76844 10.554 7.57624L6.85904 3.51324C6.68408 3.32075 6.44092 3.2035 6.18119 3.18725C5.92146 3.17101 5.66564 3.25696 5.46804 3.42624L3.29804 5.28724C3.12515 5.46075 3.02196 5.69169 3.00804 5.93624C2.99304 6.18624 2.70704 12.1082 7.29904 16.7022C11.305 20.7072 16.323 21.0002 17.705 21.0002C17.907 21.0002 18.031 20.9942 18.064 20.9922C18.3085 20.9786 18.5394 20.8747 18.712 20.7012L20.572 18.5302C20.7415 18.3328 20.8276 18.0771 20.8114 17.8174C20.7952 17.5577 20.6779 17.3145 20.485 17.1392L16.422 13.4432Z" />
+                                        </svg>
+                                        +1 (180) 567-8990
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 position-relative overflow-hidden" id="testimonials">
+        <div class="world-map-bg"></div>
+
+        <div class="container position-relative">
+            <div class="text-center mb-5">
+                <div class="mb-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="me-2">
+                        <path d="M12 2L4 7V12C4 16.5 7.5 20.5 12 22C16.5 20.5 20 16.5 20 12V7L12 2Z" fill="#00A650" />
+                    </svg>
+                    <span class="text-uppercase text-muted small">WHAT CLIENTS SAY</span>
+                </div>
+                <h2 class="heading  ">
+                    Hear What <span class="text-primary">Our Global<br>Clients</span> Say
+                </h2>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Sarah M. -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card bg-white rounded-4 p-4 shadow-sm h-100">
+                            <div class="text-center client-img">
+                                <img src="https://i.pravatar.cc/100?img=32" alt="Sarah M." class="rounded-circle mb-3"
+                                    style="width: 80px; height: 80px; object-fit: cover; border: 4px solid #00A650;">
+                            </div>
+                            <p class="text-muted mb-4">
+                                "Boost Cleaning did an amazing job on our end of lease clean. We got our full bond back!
+                                Professional, thorough, and great value."
+                            </p>
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-1">Sarah M.</h5>
+                                <p class="text-muted small mb-0">Brunswick Resident</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- James T. -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card bg-white rounded-4 p-4 shadow-sm h-100">
+                            <div class="text-center client-img">
+                                <img src="https://i.pravatar.cc/100?img=12" alt="James T." class="rounded-circle mb-3"
+                                    style="width: 80px; height: 80px; object-fit: cover; border: 4px solid #00A650;">
+                            </div>
+                            <p class="text-muted mb-4">
+                                "We use Boost Cleaning for our restaurant. They're reliable, detail-oriented, and
+                                understand
+                                food safety requirements. Highly recommend!"
+                            </p>
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-1">James T.</h5>
+                                <p class="text-muted small mb-0">Prahran Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emma K. -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card bg-white rounded-4 p-4 shadow-sm h-100">
+                            <div class="text-center client-img">
+                                <img src="https://i.pravatar.cc/100?img=45" alt="Emma K." class="rounded-circle mb-3"
+                                    style="width: 80px; height: 80px; object-fit: cover; border: 4px solid #00A650;">
+                            </div>
+                            <p class="text-muted mb-4">
+                                "The carpet cleaning was fantastic – removed stains I thought were permanent.
+                                The team was friendly and efficient. Will definitely use again!"
+                            </p>
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-1">Emma K.</h5>
+                                <p class="text-muted small mb-0">South Yarra Resident</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Michael R. -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card bg-white rounded-4 p-4 shadow-sm h-100">
+                            <div class="text-center client-img">
+                                <img src="https://i.pravatar.cc/100?img=18" alt="Michael R." class="rounded-circle mb-3"
+                                    style="width: 80px; height: 80px; object-fit: cover; border: 4px solid #00A650;">
+                            </div>
+                            <p class="text-muted mb-4">
+                                "I use Boost Cleaning for all my rental properties. Their bond cleaning is consistently
+                                excellent and tenants always get their deposits back."
+                            </p>
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-1">Michael R.</h5>
+                                <p class="text-muted small mb-0">Richmond Property Manager</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lisa P. -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card bg-white rounded-4 p-4 shadow-sm h-100">
+                            <div class="text-center client-img">
+                                <img src="https://i.pravatar.cc/100?img=27" alt="Lisa P." class="rounded-circle mb-3"
+                                    style="width: 80px; height: 80px; object-fit: cover; border: 4px solid #00A650;">
+                            </div>
+                            <p class="text-muted mb-4">
+                                "Regular house cleaning has been a game changer for our family.
+                                The team is trustworthy, thorough, and uses eco-friendly products."
+                            </p>
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-1">Lisa P.</h5>
+                                <p class="text-muted small mb-0">Malvern Homeowner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- David C. -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card bg-white rounded-4 p-4 shadow-sm h-100">
+                            <div class="text-center client-img">
+                                <img src="https://i.pravatar.cc/100?img=7" alt="David C." class="rounded-circle mb-3"
+                                    style="width: 80px; height: 80px; object-fit: cover; border: 4px solid #00A650;">
+                            </div>
+                            <p class="text-muted mb-4">
+                                "Our office has never looked better. The team is punctual, professional, and thorough.
+                                Great communication throughout the entire process."
+                            </p>
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-1">David C.</h5>
+                                <p class="text-muted small mb-0">Preston Office Manager</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button class="scroll-to-top btn  rounded-circle" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="black">
+                <path d="M7 14L12 9L17 14H7Z" />
+            </svg>
+        </button>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="process-section py-5" id="process">
+        <div class="container text-center">
+
+            <!-- Heading -->
+            <small class="text-uppercase text-muted">How It Works
+            </small>
+            <h2 class="heading   mb-5">
+                How It <span>Works</span>
+            </h2>
+
+
+            <div class="max-w-6xl">
+                <div class="row justify-content-center g-4 mb-5">
+                    <div class="col-md-3">
+                        <div class="chekbox">
+                            <span class="check">✓</span>
+                            <div class="offer-box">
+
+                                <p class="mb-1 small">Weekly Services</p>
+                                <h5 class="fw-bold">30% OFF!</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="chekbox">
+
+                            <span class="check">✓</span>
+                            <div class="offer-box ">
+
+                                <p class="mb-1 small">Big Savings On</p>
+                                <h5 class="fw-bold">Recurring Services</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="chekbox">
+
+                            <span class="check">✓</span>
+                            <div class="offer-box">
+
+                                <p class="mb-1 small">Bi-Weekly Services</p>
+                                <h5 class="fw-bold">25% OFF!</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How it works -->
+                <p class="fw-medium mb-4">How Does it Work?</p>
+
+                <div class="process-flow position-relative mx-auto">
+
+                    <!-- dashed line -->
+                    <div class="dashed-line"></div>
+
+                    <!-- Step 1 -->
+                    <div class="step step-right">
+                        <div class="icon-box">📅</div>
+                        <h6 class="fw-bold mt-3">1. Contact Us for a Free Quote
+                        </h6>
+                        <p class="small text-muted">
+                            Call us at 0483 959 909 or fill out our online form to get started with your free
+                            consultation.
+
+
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step step-left">
+                        <div class="icon-box">📄</div>
+                        <h6 class="fw-bold mt-3">2. Site Inspection & Custom Plan
+                        </h6>
+                        <p class="small text-muted">
+                            We'll visit your premises to assess your needs and create a tailored cleaning plan that fits
+                            your schedule and budget.
+
+
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step step-right bottom">
+                        <div class="icon-box">🧹</div>
+                        <h6 class="fw-bold mt-3">3. Professional Cleaning Delivered
+                        </h6>
+                        <p class="small text-muted">
+                            Our experienced team arrives on time with all equipment and eco-friendly products to deliver
+                            exceptional results.
+
+
+                        </p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step step-left bottom-2">
+                        <div class="icon-box">⭐</div>
+                        <h6 class="fw-bold mt-3">4. Ongoing Support & Maintenance
+                        </h6>
+                        <p class="small text-muted">
+                            We provide continuous quality assurance and are always available to address any concerns or
+                            adjust services as needed.
+
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="mt-5 pt-5">
+                <a href="#booking" class="btn btn-warning rounded-pill px-4 py-2 fw-semibold">
+                    Book Your Service
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="sub-heading">
+                        <i class="fas fa-sparkles"></i> Frequently Asked Question
+                    </div>
+
+                    <h2 class="heading  ">
+                        You Have <span class="text-highlight">Questions</span>,<br />
+                        <span class="text-highlight">We Have</span> Answers
+                    </h2>
+
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How much does commercial cleaning cost in Melbourne?
+                                </button>
+                            </h5>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Commercial cleaning costs in Melbourne vary based on your facility size, cleaning
+                                    frequency, and specific requirements. Office cleaning typically ranges from $30-60
+                                    per hour, while specialized services like medical facility cleaning may cost more
+                                    due to strict hygiene protocols. Contact us for a detailed quote tailored to your
+                                    business needs.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What cleaning services do you offer?</button>
+                            </h5>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer a comprehensive range of cleaning services including office cleaning,
+                                    commercial cleaning, end of lease/bond cleaning, carpet cleaning, tile & grout
+                                    cleaning, restaurant cleaning, retail cleaning, gym cleaning, medical cleaning,
+                                    warehouse cleaning, hospitality cleaning, and builders cleaning.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do you use eco-friendly cleaning products?
+                                </button>
+                            </h5>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! Boost Cleaning prioritizes environmental responsibility in all our
+                                    Melbourne cleaning services. We use eco-friendly, non-toxic cleaning products that
+                                    are effective against germs and dirt while being safe for your staff, clients, and
+                                    the environment.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What areas in Melbourne do you service?
+                                </button>
+                            </h5>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We service all Melbourne metropolitan areas including Brunswick, Malvern, Preston,
+                                    Prahran, Southbank, Richmond, East Melbourne, South Yarra, Mornington, and
+                                    surrounding suburbs. Contact us to confirm service availability in your area.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Are your cleaners insured and background checked?
+                                </button>
+                            </h5>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, all our cleaning staff undergo thorough background checks and are fully
+                                    insured. We prioritize security and professionalism, ensuring you can trust our team
+                                    in your home or business premises.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="image-wrapper">
+                        <img src="img/h1-happy-smiling.jpg" alt="Professional Cleaner" class="hero-image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="clinara-footer py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 text-center ">
+                    <div class="logo-area d-flex align-items-center m   justify-content-between">
+                        <img src="img/logo.png" alt="Clinara Cleaning Service Logo" class="footer-logo me-2">
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center ">
+                    <h2 class="tagline m-0">Bringing Shine to Your Space</h2>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <h4 class="footer-heading">Contact Clinara</h4>
+                    <ul class="list-unstyled contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span class="contact-info">
+                                **Service Areas:** Brunswick, Malvern, Preston, Prahran, Southbank, Richmond, East
+                                Melbourne, South Yarra, Mornington & all Melbourne areas
+
+
+                            </span>
+                        </li>
+                        <li>
+                            <i class="far fa-clock contact-icon"></i>
+                            <span class="contact-info">
+                                **Opening Hour:** Mon-Sat 9:00 - 7:00
+                            </span>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope contact-icon"></i>
+                            <a href="mailto:info@boostcleaningmelbourne.com.au" class="text-decoration-none">
+                                <span class="contact-info">
+                                    **Send Mail:** info@boostcleaningmelbourne.com.au
+                                </span>
+                        </li>
+                    </ul>
+                    <a href="tel:0483 959 909 " class="btn call-for-booking mt-3">
+                        Call for booking :
+                        <span class="phone-number me-1"> 0483 959 909 </span>
+                    </a>
+                </div>
+
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h4 class="footer-heading">Services Links</h4>
+                    <ul class="list-unstyled service-links">
+                        <li><a href="#services">Office
+                                Cleaning</a></li>
+                        <li><a href="#services">Retail
+                                Cleaning</a></li>
+                        <li><a href="#services">Warehouse
+                                Cleaning</a></li>
+                        <li><a href="#services">Medical
+                                Cleaning</a></li>
+                        <li><a href="#services">Hospitality
+                                Cleaning</a></li>
+                        <li><a href="#services">Gym
+                                Cleaning
+                            </a></li>
+                        <li><a href="#services">Viwe All Services</a></li>
+
+
+
+
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="footer-heading">Subscribe Newsletter</h4>
+                    <div class="newsletter-note mb-3 p-3">
+                        <i class="far fa-bell note-icon"></i>
+                        <p class="mb-0">Please sign up to follow the latest news and events from us, we promise not to
+                            spam your inbox.</p>
+                    </div>
+                    <form class="input-group newsletter-form">
+                        <input type="email" class="form-control email-input" placeholder="Email Address..."
+                            aria-label="Email Address">
+                        <button class="btn subscribe-btn" type="submit">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <div class="social-icons mt-4 d-flex justify-content-start">
+                        <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-slack"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Swiper(".testimonials-swiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>
