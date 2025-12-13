@@ -1122,3 +1122,63 @@ line-height: 30px;
     background-color: var(--clinara-mid-green);
     color: white;
 }
+
+
+/* Icon */
+.icon-box i {
+  font-size: 22px;
+  color: #000;
+}
+
+/* Desktop remains same */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .process-flow {
+    max-width: 100%;
+    min-height: auto;
+    background: none;
+  }
+
+  .step {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .step-right,
+  .step-left,
+  .step.bottom,
+  .step.bottom-2 {
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .process-flow {
+    padding-top: 20px;
+  }
+
+  .step {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .icon-box {
+    margin-bottom: 10px;
+  }
+
+  .chekbox {
+    margin-bottom: 20px;
+  }
+
+  .offer-box {
+    text-align: center;
+  }
+}
