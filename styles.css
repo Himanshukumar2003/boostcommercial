@@ -1597,3 +1597,50 @@ padding: 40px 0;
         height: 40px;
     }
 }
+
+
+
+.google-review-card {
+   
+    background: linear-gradient(        135deg,        #ffffff 0%,        #f8f9ff 40%,        #eef2ff 100%    );
+    /*👈softgradient*/display: flex;
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    transform: translateY(-2%);
+    z-index: 99999;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 12px;
+    border-radius: 18px;
+    box-shadow:         0 10px 25px rgba(0, 0, 0, 0.12),        inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+    -webkit-transform: translateY(-2%);
+    -moz-transform: translateY(-2%);
+    -ms-transform: translateY(-2%);
+    -o-transform: translateY(-2%);
+}
+
+
+
+    .google-logo svg {
+        width: 42px;
+        height: 42px;
+    }
+
+.google-review-card .rating {
+    font-size: 28px;  /* pehle 48px tha */
+    font-weight: 700;
+    color: #111;
+    line-height: 1.5 !important;
+    margin-bottom: 6px;
+}
+
+.stars i {
+    font-size: 18px;
+    color: #fbbc04;
+}
+
+.review-count {
+    font-size: 14px;
+    color: #6c757d;
+}
