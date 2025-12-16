@@ -1051,6 +1051,7 @@ background-image: linear-gradient(
     color: var(--boostcommercial-heading-color);
     font-weight: 600;
     padding: 10px 20px;
+    color: white;
     border-radius: 50px;
     display: inline-flex;
     align-items: center;
@@ -1059,7 +1060,7 @@ background-image: linear-gradient(
 }
 
 .call-for-booking:hover {
-    background-color: #ffd64d;
+    background-color: var(--boostcommercial-dark-green);
     color: var(--boostcommercial-heading-color);
 }
 
