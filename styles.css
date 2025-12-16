@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300;400;500;600;700&display=swap');
 
-
 :root {
-    --primary-color: #00A650;
+    --primary-color: #429EA6;
     --secondary-color: #212E3B;
     --text-color: #5C5E5E;
-    --accent-color: #00A650;
-    --border-color: #5c5e5e2e;
+    --accent-color: #429EA6;
+    --border-color: #429ea63b;
     --lighter-color: #9FA2A4;
     --dark-color: #1A1A1A;
-    --highlight-color: #96FE81;
-    --warning-color: #FFD700;
+    --highlight-color: #8EDFE4;
+    --warning-color: var(--primary-color);
+
     --font1: 'Parkinsans', sans-serif;
     --fontmain: 'Boldonse', sans-serif;
 
-      --boostcommercial-light-green: #f3f9f2;
-    --boostcommercial-mid-green: #8fd279;
-    --boostcommercial-dark-green: #48a614;
-    --boostcommercial-yellow: #ffc90a;
-    --boostcommercial-text-gray: #555;
-    --boostcommercial-heading-color: #333;
+    --boostcommercial-light-green: #E6F4F5;
+    --boostcommercial-mid-green: #6BBEC5;
+    --boostcommercial-dark-green: #2E7E85;
+    --boostcommercial-yellow: var(--primary-color);
+    --boostcommercial-text-gray: #555555;
+    --boostcommercial-heading-color: #333333;
 }
+
 
 * {
     margin: 0;
@@ -54,6 +55,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 40px 0;
 }
 
+
+.logo{
+    width: 80px;
+}
+
+
 .text-primary {
     color: var(--primary-color) !important;
 }
@@ -69,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-warning {
     background-color: var(--warning-color);
     border-color: var(--warning-color);
-    color: var(--dark-color);
+    color: white;
     font-weight: 600;
     padding: 12px 32px;
     border-radius: 50px;
@@ -77,9 +84,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-warning:hover {
-    background-color: #FFC800;
-    border-color: #FFC800;
+    background-color: var(--boostcommercial-dark-green);
+    border-color:  var(--boostcommercial-dark-green);
     transform: translateY(-2px);
+    
     box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
 }
 
@@ -360,7 +368,7 @@ h1{
 /* Booking Section */
 
 .booking-section{
-    background: url(img/hero-team-BCKOYGMQ.png);
+    background: url(img/contact-us.webp);
 }
 
 .booking-wrapper {
@@ -556,14 +564,6 @@ h1{
 }
 
 /* Testimonials Section */
-.testimonials-section {
-  background:
-    linear-gradient(135deg, rgba(248, 248, 248, 0.9) 0%, rgba(232, 232, 232, 0.9) 100%),
-    url("img/rewies.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 
 .world-map-bg {
@@ -581,6 +581,10 @@ h1{
 .testimonial-card {
     transition: all 0.3s ease;
     border: 1px solid var(--border-color);
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 
 .client-img{
@@ -591,12 +595,12 @@ h1{
 .testimonial-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
 }
 
-/* Swiper Customization */
-.swiper {
-    padding: 80px 0 60px 0;
-}
 
 .swiper-slide {
     height: auto;
@@ -753,7 +757,11 @@ color: white;
 /* Offers */
 .offer-box {
 background-color: transparent;
-    background-image: linear-gradient(180deg, #F2D701 0%, #E8F5D3 100%);  border-radius: 18px;
+background-image: linear-gradient(
+  180deg,
+  #6BBEC5 0%,
+  #E6F4F5 100%
+);
   padding: 20px;
   overflow: visible;
   position: relative;
@@ -761,7 +769,7 @@ background-color: transparent;
 }
 
 .offer-box.active {
-  background: linear-gradient(180deg, #f2e630, #e9f3c6);
+  background: linear-gradient(180deg,  var(--primary-color) , #e9f3c6);
 }
 .chekbox{
     position: relative;
@@ -825,7 +833,7 @@ line-height: 30px;
 .icon-box {
   width: 50px;
   height: 50px;
-  background: #e9f3c6;
+  background: #E6F4F5;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -954,7 +962,11 @@ line-height: 30px;
 
 .boostcommercial-footer {
       background-color: transparent;
-    background-image: linear-gradient(180deg, #E8F5D3 61.14%, #FFFFFF 116.68%);
+background-image: linear-gradient(
+  180deg,
+  #E6F4F5 61.14%,
+  #FFFFFF 116.68%
+);
     color: var(--boostcommercial-text-gray);
     position: relative;
     overflow: hidden; /* To contain the background stars/shapes */
@@ -1279,4 +1291,309 @@ padding: 40px 0;
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+
+
+.footer-logo{
+    width: 120px;
+}
+
+
+/*  */
+
+
+/* General Styles */
+.testimonials-section {
+    background-color: #f8f9fa;
+}
+
+.testimonials-section h2 {
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 2rem;
+}
+
+/* Rating Card (Left Side) */
+.rating-card {
+
+    text-decoration: none;
+}
+
+.rating-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.stars {
+    color: #fbb400;
+    font-size: 1.2rem;
+}
+
+.stars i {
+    margin: 0 2px;
+}
+
+.review-count {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.google-logo {
+    max-width: 80px;
+    height: auto;
+}
+
+/* Review Cards */
+.review-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.reviewer-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-initial {
+    background-color: #9ca3af;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.review-text {
+  position: relative;
+  overflow: hidden;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+
+  transition:
+    max-height 0.5s ease,
+    opacity 0.3s ease;
+}
+
+/* Fade overlay (jab collapsed ho) */
+.review-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    #ffffff
+  );
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Expanded state */
+.review-text.expanded {
+  -webkit-line-clamp: unset;
+  opacity: 1;
+}
+
+.review-text.expanded::after {
+  opacity: 0;
+}
+
+/* Read more button */
+.read-more {
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.3s ease, transform 0.25s ease;
+  -webkit-transition: color 0.3s ease, transform 0.25s ease;
+  -moz-transition: color 0.3s ease, transform 0.25s ease;
+  -ms-transition: color 0.3s ease, transform 0.25s ease;
+  -o-transition: color 0.3s ease, transform 0.25s ease;
+}
+
+.read-more:hover {
+  color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.reviewer-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.review-date {
+    font-size: 0.85rem;
+}
+
+.google-icon {
+    max-width: 20px;
+    height: auto;
+}
+
+.verified-icon {
+    color: #4285f4;
+    font-size: 0.9rem;
+    margin-left: 4px;
+}
+
+.review-text {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.read-more {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.read-more:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Trustindex Badge */
+.trustindex-badge {
+    background-color: #2e7d32;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-control-prev {
+    left: -20px;
+}
+
+.carousel-control-next {
+    right: -20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .rating-card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonials-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
+
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: #222;
+    transition: all 0.3s ease;
+}
+
+/* Arrow size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: var(--accent-color);
+    /*Bootstrapprimary*/color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px var(--accent-color)/20;
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+}
+
+/* Active click effect */
+.swiper-button-next:active,
+.swiper-button-prev:active {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+/* Position adjustment */
+.swiper-button-next {
+    right: -20px;
+}
+
+.swiper-button-prev {
+    left: -20px;
+}
+
+/* Hide buttons on small devices (optional) */
+@media (max-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
 }
