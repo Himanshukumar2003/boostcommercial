@@ -1452,9 +1452,9 @@ padding: 40px 0;
 }
 
 .verified-icon {
-    color: #4285f4;
+    color: #4285f4 !important;
     font-size: 0.9rem;
-    margin-left: 4px;
+    margin-left: 20px;
 }
 
 .review-text {
