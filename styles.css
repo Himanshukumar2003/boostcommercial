@@ -204,7 +204,7 @@ h1{
 }
 
 /* Services Section */
-.services-section {
+.why-choose-section {
     position: relative;
     padding-top:230px; 
 }
@@ -711,7 +711,7 @@ h1{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #008a43;
+    background: var(--boostcommercial-dark-green);
 }
 
 
@@ -1644,4 +1644,97 @@ padding: 40px 0;
 .review-count {
     font-size: 14px;
     color: #6c757d;
+}
+
+
+
+.why-choose-section {
+  background: #ffffff;
+}
+
+/* LEFT IMAGE */
+.image-wrap {
+  position: relative;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.floating-img {
+  width: 220px;
+  position: absolute;
+  bottom: 0px;
+  left: -40px;
+  border-radius: 20px;
+  transform: rotate(-12deg);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+
+/* TEXT SIDE */
+
+.section-title {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* FEATURES */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.feature-list li {
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.feature-list i {
+  color: #16a34a;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.book-btn {
+  background: #1f2937;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.book-btn i {
+  margin-left: 8px;
+  background: #16a34a;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.book-btn:hover {
+  background: #111827;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .floating-img {
+    display: none;
+  }
+
+
 }
